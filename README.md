@@ -41,8 +41,7 @@ For Developers:
 Optional but recommended:
 
 - snag: Fetch web page content using a browser engine ([installation](https://github.com/grantcarthew/snag))
-- kagi: Query the Kagi search engine FastGPT API ([Bash script, not easy to setup, make it your own](https://github.com/grantcarthew/scripts/blob/main/kagi))
-- lsd: Enhanced directory listings
+- kagi: Query the Kagi search engine FastGPT API ([installation](https://github.com/grantcarthew/kagi))
 
 ## Installation
 
