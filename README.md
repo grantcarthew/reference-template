@@ -237,7 +237,7 @@ Read the ~/reference/ENVIRONMENT.md file for environment context.
 Read the ~/reference/INDEX.csv for documentation context.
 Read the AGENTS.md file for repository context.
 Read the PROJECT.md document to understand your task.
-Once you're read these documents, start the Reference Repository Refresh project work.
+Once you have read these documents, start the Reference Repository Refresh project work.
 ```
 
 _Note: Again, you should automate this as I've done here [start](https://github.com/grantcarthew/scripts/blob/main/start)_
