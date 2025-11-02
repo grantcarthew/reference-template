@@ -52,8 +52,20 @@ For more information read ~/reference/AGENTS.md
 - `lsd --tree --depth <n>` for directory trees
 - `fd` for finding files
 
-## Fetch Internet Content
+## Web Tools
 
-- `kagi <search-terms>`: Search the internet returning clean search results
-- `snag <url>`: Fetch web page content in Markdown via a browser
-- `curl https://raw.githubusercontent.com/{username}/{repository}/{branch}/{path_to_file}`: GitHub file content
+- `kagi <search-terms>`: AI-powered search via Kagi FastGPT with web context and references
+  - Formats: `-f text` (default, best for AI), `-f md` (structured), `-f json` (programmatic)
+  - References provided for follow-up with snag
+  - Example: `kagi golang best practices`
+
+- `snag <url>`: Fetch web content via browser automation (supports auth)
+  - Formats: `-f md` (default, best for AI), `-f html`, `-f text`, `-f png` (visual inspection)
+  - Auth: `snag --open-browser`, user authenticates, `snag --list-tabs`, then `snag -t "pattern"`
+  - Dynamic content: `--wait-for ".selector"`
+  - Batch: `snag url1 url2 url3` or `snag --url-file urls.txt`
+  - Example: `snag example.com`, `snag -f png dashboard.com`
+
+- `curl https://raw.githubusercontent.com/{user}/{repo}/{branch}/{path}`: Fetch individual GitHub files
+  - More efficient than cloning when reading specific files
+  - Example: `curl https://raw.githubusercontent.com/user/repo/main/README.md`
